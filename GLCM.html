@@ -129,6 +129,41 @@
         display: block; /* Ensure the image is treated as a block element */
     }
 
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column; /* Stack header items vertically */
+            align-items: flex-start; /* Align items to start */
+        }
+
+        nav {
+            flex-direction: column; /* Stack navigation items vertically */
+            gap: 10px;
+        }
+
+        .canva, .canva2 {
+            flex-direction: column; /* Stack items vertically */
+        }
+
+        .left, .right {
+            width: 100%; /* Make full width */
+            margin: 10px 0; /* Adjust margin */
+        }
+
+        h1 {
+            font-size: 30px; /* Reduce font size */
+            margin-top: 50px; /* Adjust margin */
+        }
+
+        h3 {
+            font-size: 20px; /* Reduce font size */
+        }
+
+        p {
+            font-size: medium; /* Adjust font size */
+            padding: 15px; /* Adjust padding */
+        }
+    }
 
 
 </style>
