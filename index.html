@@ -12,6 +12,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
+             * {
+                 box-sizing: border-box;
+            }
             body{
 
                 background-color: #FAF9F6;
@@ -24,6 +27,9 @@
             li{
                 list-style: none;
                 margin: 20px;
+                text-decoration: none;
+                font-weight:400;
+                color: #000;
             }
             h1 {
                 text-align: center;
@@ -41,14 +47,27 @@
             .container {
                 display: flex;
                 gap: 100px;
+               
                 
             }
             .child{
                 display: flex;
                 width: 600px;
+                border: 1px dashed black;
+                border-radius: 10px;
+                padding:10px;
+            
+                box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+                transition: transform 0.3s; /* Smooth transition */
+               
+                
             }
+            .child:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        } 
             .text{
                 flex-direction: column;
+                padding:10px;
             }
             .text h2 {
                 margin: 0;
@@ -63,6 +82,9 @@
             }
             .header > * {
                 display: inline-block;
+            }
+            img{
+                border-radius: 10px;
             }
 
 
@@ -110,6 +132,7 @@
                 </div>
                 
             </div>
+
         </div>
     </body>
 </html>
